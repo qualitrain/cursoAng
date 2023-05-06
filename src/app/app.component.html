@@ -3,7 +3,13 @@
     <p class="h5 my-3">Ejemplo de observable</p>
     <app-test-observable></app-test-observable>
   </div>
-  <div>
+  <div *ngIf="ejemploFromEvent">
+    <p class="h5 my-3">Ejemplo de fromEvent. UIEvents y stopPropagation()</p>
     <app-repaso-arreglos></app-repaso-arreglos>
+    <hr class="mt-4">
+  </div>
+  <div *ngIf="ejercicioFromEvent"  class="mt-4">
+    <p class="h5 my-3">Ejercicio de fromEvent. </p>
+    <app-test-rxjs01></app-test-rxjs01>
   </div>
 </div>

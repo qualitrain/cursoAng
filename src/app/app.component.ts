@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   ejemploObservable:boolean=false;
+  ejemploFromEvent:boolean=false;
+  ejercicioFromEvent:boolean=true;
+
   title = 'cursoAng';
 }
