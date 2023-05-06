@@ -1,4 +1,8 @@
-<div>
+<div class="mt-4">
    <button class="btn btn-primary" (click)="invocarFunAsincrona()">Arrancar</button> 
-   <span class="ml-4 text-danger h5">{{mensaje}}</span>
+   <span class="ml-4 text-danger h5">{{mensaje.join(", ")}}</span>
 </div>
+<div class="mt-4">
+    <button class="btn btn-danger" (click)="detenerFunAsincrona()">Detener</button> 
+</div>
+ 

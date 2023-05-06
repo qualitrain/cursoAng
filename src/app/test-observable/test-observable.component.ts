@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-test-observable',
@@ -7,17 +7,33 @@ import { Observable } from 'rxjs';
   styleUrls: ['./test-observable.component.css']
 })
 export class TestObservableComponent {
-  mensaje:string="";
+  mensaje:string[]=[];
+  suscripcion:Subscription[]=[];
+
   invocarFunAsincrona(){
   //  funcAsincrona();
     const obsFun:Observable<Number> = new Observable(funcAsincrona);
-    obsFun.subscribe(valor => this.mensaje = "" + valor);    
+    let i = this.suscripcion.length;
+    this.suscripcion.push( obsFun.subscribe(valor => this.mensaje[i] = "" + valor));    
+  }
+  detenerFunAsincrona(){
+    this.suscripcion.pop()?.unsubscribe();
+    this.mensaje[this.suscripcion.length]="Finalizado";
   }
 }
 
 const funcAsincrona = function(emisor:any){
-  setTimeout(()=> {
-    console.log("Saludos!");
+  let i = 0;
+  const limite = 10;
+  const lapso = 1000;
+  let clock = 
+  setInterval(()=> {
+    i++;
+    console.log("Saludos!" + i);
     emisor.next(Math.random())
-  }, 2000);
+    if(i===limite){
+      clearInterval(clock);
+      emisor.complete(0);
+    }
+  }, lapso);
 }
