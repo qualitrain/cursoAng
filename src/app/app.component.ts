@@ -9,6 +9,7 @@ export class AppComponent {
   ejemploObservable:boolean=false;
   ejemploFromEvent:boolean=false;
   ejercicioFromEvent:boolean=false;
+  componenteParametrizado=false;
 
   title = 'cursoAng';
 }

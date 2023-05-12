@@ -12,10 +12,13 @@
     <p class="h5 my-3">Ejercicio de fromEvent. </p>
     <app-test-rxjs01></app-test-rxjs01>
   </div>
-  <div class="mt-4">
+  <div class="mt-4" *ngIf="componenteParametrizado">
     <p class="h5 my-3">Ejemplo de interval. </p>
     <app-test-interval pausaStr="400"></app-test-interval>
     <app-test-interval pausaStr="800"></app-test-interval>
     <app-test-interval></app-test-interval>
+  </div>
+  <div>
+    <app-test-errores></app-test-errores>
   </div>
 </div>

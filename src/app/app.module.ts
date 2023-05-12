@@ -7,6 +7,7 @@ import { TestObservableComponent } from './test-observable/test-observable.compo
 import { RepasoArreglosComponent } from './repaso-arreglos/repaso-arreglos.component';
 import { TestRxjs01Component } from './test-rxjs01/test-rxjs01.component';
 import { TestIntervalComponent } from './test-interval/test-interval.component';
+import { TestErroresComponent } from './test-errores/test-errores.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TestIntervalComponent } from './test-interval/test-interval.component';
     TestObservableComponent,
     RepasoArreglosComponent,
     TestRxjs01Component,
-    TestIntervalComponent
+    TestIntervalComponent,
+    TestErroresComponent
   ],
   imports: [
     BrowserModule,
