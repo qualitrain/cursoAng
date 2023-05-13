@@ -13,7 +13,8 @@ export class AppComponent {
   ejemploManejoDeErrores=false;
   ejercicioTakeUntil=false;
   ejercicioMerge=false;
-  ejercicioConcat=true;
+  ejercicioConcat=false;
+  ejemploDebounce=true;
 
   title = 'cursoAng';
 }
