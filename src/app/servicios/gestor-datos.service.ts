@@ -6,6 +6,9 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class GestorDatosService {
+  static nInstancias:number=0
+  nInstancia:number=0;
+
   gatos=[
     {nombre:'Fifi',edad:5},
     {nombre:'Esponja',edad:3},
@@ -13,7 +16,10 @@ export class GestorDatosService {
     {nombre:'Tiger',edad:10},
     {nombre:'Tomas',edad:8},
   ]
-  constructor() { }
+  constructor() { 
+    GestorDatosService.nInstancias++;
+    this.nInstancia = GestorDatosService.nInstancias;
+  }
 
   getGatoXID(id:number):Observable<igato>{
     return of(this.gatos[id -1]);
