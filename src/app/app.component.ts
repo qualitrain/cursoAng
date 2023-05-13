@@ -15,7 +15,8 @@ export class AppComponent {
   ejercicioMerge=false;
   ejercicioConcat=false;
   ejemploDebounce=false;
-  ejemploThrottle=true;
+  ejemploThrottle=false;
+  ejemplo01Servicios=true;
 
   title = 'cursoAng';
 }
