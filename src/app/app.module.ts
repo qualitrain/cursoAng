@@ -12,6 +12,7 @@ import { EjerTakeUltilComponent } from './ejer-take-ultil/ejer-take-ultil.compon
 import { EjerMergeComponent } from './ejer-merge/ejer-merge.component';
 import { EjerConcatComponent } from './ejer-concat/ejer-concat.component';
 import { TestDebounceComponent } from './test-debounce/test-debounce.component';
+import { TestThrottleComponent } from './test-throttle/test-throttle.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TestDebounceComponent } from './test-debounce/test-debounce.component';
     EjerTakeUltilComponent,
     EjerMergeComponent,
     EjerConcatComponent,
-    TestDebounceComponent
+    TestDebounceComponent,
+    TestThrottleComponent
   ],
   imports: [
     BrowserModule,
