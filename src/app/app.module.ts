@@ -8,6 +8,7 @@ import { RepasoArreglosComponent } from './repaso-arreglos/repaso-arreglos.compo
 import { TestRxjs01Component } from './test-rxjs01/test-rxjs01.component';
 import { TestIntervalComponent } from './test-interval/test-interval.component';
 import { TestErroresComponent } from './test-errores/test-errores.component';
+import { EjerTakeUltilComponent } from './ejer-take-ultil/ejer-take-ultil.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TestErroresComponent } from './test-errores/test-errores.component';
     RepasoArreglosComponent,
     TestRxjs01Component,
     TestIntervalComponent,
-    TestErroresComponent
+    TestErroresComponent,
+    EjerTakeUltilComponent
   ],
   imports: [
     BrowserModule,

@@ -18,7 +18,11 @@
     <app-test-interval pausaStr="800"></app-test-interval>
     <app-test-interval></app-test-interval>
   </div>
-  <div>
+  <div *ngIf="ejemploManejoDeErrores">
     <app-test-errores></app-test-errores>
   </div>
+  <div *ngIf="ejercicioTakeUntil">
+    <app-ejer-take-ultil></app-ejer-take-ultil>
+  </div>
+  
 </div>

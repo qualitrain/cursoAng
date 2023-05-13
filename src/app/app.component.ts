@@ -10,6 +10,8 @@ export class AppComponent {
   ejemploFromEvent:boolean=false;
   ejercicioFromEvent:boolean=false;
   componenteParametrizado=false;
+  ejemploManejoDeErrores=false;
+  ejercicioTakeUntil=false;
 
   title = 'cursoAng';
 }
