@@ -12,6 +12,7 @@ export class AppComponent {
   componenteParametrizado=false;
   ejemploManejoDeErrores=false;
   ejercicioTakeUntil=false;
+  ejercicioMerge=true;
 
   title = 'cursoAng';
 }

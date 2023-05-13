@@ -9,6 +9,7 @@ import { TestRxjs01Component } from './test-rxjs01/test-rxjs01.component';
 import { TestIntervalComponent } from './test-interval/test-interval.component';
 import { TestErroresComponent } from './test-errores/test-errores.component';
 import { EjerTakeUltilComponent } from './ejer-take-ultil/ejer-take-ultil.component';
+import { EjerMergeComponent } from './ejer-merge/ejer-merge.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EjerTakeUltilComponent } from './ejer-take-ultil/ejer-take-ultil.compon
     TestRxjs01Component,
     TestIntervalComponent,
     TestErroresComponent,
-    EjerTakeUltilComponent
+    EjerTakeUltilComponent,
+    EjerMergeComponent
   ],
   imports: [
     BrowserModule,
