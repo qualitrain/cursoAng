@@ -5,21 +5,21 @@ import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class GestorDatosService {
+export class GestorDatosMockService {
   static nInstancias:number=0
   nInstancia:number=0;
   notificador:EventEmitter<igato> = new EventEmitter();
 
   gatos=[
-    {nombre:'Fifi',edad:5},
-    {nombre:'Esponja',edad:3},
-    {nombre:'Trapito',edad:2},
-    {nombre:'Tiger',edad:10},
-    {nombre:'Tomas',edad:8},
+    {nombre:'Nube',edad:5},
+    {nombre:'Pillin',edad:3},
+    {nombre:'Morita',edad:2},
+    {nombre:'Estela',edad:10},
+    {nombre:'Moka',edad:8},
   ]
   constructor() { 
-    GestorDatosService.nInstancias++;
-    this.nInstancia = GestorDatosService.nInstancias;
+    GestorDatosMockService.nInstancias++;
+    this.nInstancia = GestorDatosMockService.nInstancias;
   }
 
   getGatoXID(id:number):Observable<igato>{

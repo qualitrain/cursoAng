@@ -16,12 +16,16 @@ export class ConsultadorGatosComponent {
 
   constructor(private servicioDatos:GestorDatosService){
     this.nInstanciaServicio = servicioDatos.nInstancia;
+    this.servicioDatos.notificador.subscribe(gato => this.procesarGatoMuerto(gato))
   }
 
   consultarGatos(){
     this.servicioDatos.getGatos().subscribe(
       arrGatos => this.gatos = [...arrGatos]
     )
+  }
+  procesarGatoMuerto(gato:igato){
+    this.consultarGatos();
   }
   eliminarGato(nombreI:string){
     this.servicioDatos.eliminarGato(nombreI);
