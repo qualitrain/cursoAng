@@ -16,6 +16,7 @@ import { TestThrottleComponent } from './test-throttle/test-throttle.component';
 import { ConsultadorGatosComponent } from './consultador-gatos/consultador-gatos.component';
 import { ContenedorComponent } from './contenedor/contenedor.component';
 import { NotificadorBajaComponent } from './notificador-baja/notificador-baja.component';
+import { TestCombinaObsComponent } from './test-combina-obs/test-combina-obs.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NotificadorBajaComponent } from './notificador-baja/notificador-baja.co
     TestThrottleComponent,
     ConsultadorGatosComponent,
     ContenedorComponent,
-    NotificadorBajaComponent
+    NotificadorBajaComponent,
+    TestCombinaObsComponent
   ],
   imports: [
     BrowserModule,

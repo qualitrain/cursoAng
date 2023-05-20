@@ -7,7 +7,7 @@ import { GestorDatosMockService } from '../servicios/gestor-datos-mock.service';
   templateUrl: './contenedor.component.html',
   styleUrls: ['./contenedor.component.css'],
   providers:[
-    {provide:GestorDatosService, useClass:GestorDatosMockService}
+    { provide:GestorDatosService, useClass:GestorDatosMockService }
   ]
 })
 export class ContenedorComponent {
