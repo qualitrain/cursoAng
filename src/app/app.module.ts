@@ -17,6 +17,7 @@ import { ConsultadorGatosComponent } from './consultador-gatos/consultador-gatos
 import { ContenedorComponent } from './contenedor/contenedor.component';
 import { NotificadorBajaComponent } from './notificador-baja/notificador-baja.component';
 import { TestCombinaObsComponent } from './test-combina-obs/test-combina-obs.component';
+import { TestAjax01Component } from './test-ajax01/test-ajax01.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TestCombinaObsComponent } from './test-combina-obs/test-combina-obs.com
     ConsultadorGatosComponent,
     ContenedorComponent,
     NotificadorBajaComponent,
-    TestCombinaObsComponent
+    TestCombinaObsComponent,
+    TestAjax01Component
   ],
   imports: [
     BrowserModule,

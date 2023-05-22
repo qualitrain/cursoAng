@@ -18,6 +18,8 @@ export class AppComponent {
   ejemploThrottle=false;
   ejemplo01Servicios=false;
   ejemploCombinacionesFtesObservables=true;
+  ejemploCombinacionesSwitchMap=true;
+  ejemploAjax=false;
 
   title = 'cursoAng';
 }
