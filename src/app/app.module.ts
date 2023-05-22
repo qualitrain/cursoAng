@@ -19,6 +19,7 @@ import { NotificadorBajaComponent } from './notificador-baja/notificador-baja.co
 import { TestCombinaObsComponent } from './test-combina-obs/test-combina-obs.component';
 import { TestAjax01Component } from './test-ajax01/test-ajax01.component';
 import { TestCombinaObs02Component } from './test-combina-obs02/test-combina-obs02.component';
+import { TestCombinaObs03Component } from './test-combina-obs03/test-combina-obs03.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { TestCombinaObs02Component } from './test-combina-obs02/test-combina-obs
     NotificadorBajaComponent,
     TestCombinaObsComponent,
     TestAjax01Component,
-    TestCombinaObs02Component
+    TestCombinaObs02Component,
+    TestCombinaObs03Component
   ],
   imports: [
     BrowserModule,

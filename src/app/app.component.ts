@@ -17,6 +17,7 @@ export class AppComponent {
   ejemploDebounce=false;
   ejemploThrottle=false;
   ejemplo01Servicios=false;
+  ejemploCombinacionesSwitchMapAproximacion=false;
   ejemploCombinacionesSwitchMap=true;
   ejemploCombinacionesFtesObservables=false;
   ejemploAjax=false;
