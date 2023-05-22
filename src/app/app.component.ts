@@ -17,8 +17,8 @@ export class AppComponent {
   ejemploDebounce=false;
   ejemploThrottle=false;
   ejemplo01Servicios=false;
-  ejemploCombinacionesFtesObservables=true;
   ejemploCombinacionesSwitchMap=true;
+  ejemploCombinacionesFtesObservables=false;
   ejemploAjax=false;
 
   title = 'cursoAng';

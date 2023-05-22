@@ -36,17 +36,23 @@
   <div *ngIf="ejemploThrottle" class="mt-4">
     <app-test-throttle></app-test-throttle>
   </div>
+
   <div *ngIf="ejemplo01Servicios" class="mt-4">
     <div *ngif='false' class="row">
       <app-consultador-gatos class="col-6"></app-consultador-gatos>
       <app-consultador-gatos class="col-5"></app-consultador-gatos>
     </div>
-
     <app-contenedor></app-contenedor>
   </div>
+
+  <div *ngIf="ejemploCombinacionesSwitchMap" class="mt-4">
+    <app-test-combina-obs02></app-test-combina-obs02>
+ </div>
+
   <div *ngIf="ejemploCombinacionesFtesObservables" class="mt-4">
      <app-test-combina-obs></app-test-combina-obs> 
   </div>
+
   <div *ngIf="ejemploAjax" class="mt-4">
     <app-test-ajax01></app-test-ajax01> 
  </div>
