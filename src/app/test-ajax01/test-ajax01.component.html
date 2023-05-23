@@ -1,23 +1,26 @@
 <h6 class="my-3">Consulta de Perros</h6>
 <div>
     <span class="text-success etiqueta">Id:</span>
-    <span class="text-secondary ml-4" [class]="hayError ? 'text-danger' : 'text-secondary'">{{perris.id}}</span>
+    <span class="text-secondary ml-4" [class]="perroInexistente ? 'text-danger' : 'text-secondary'">
+        {{perris.id === 0 ? '':perris.id}}</span>
 </div>
 <div>
     <span class="text-success etiqueta">Nombre:</span>
-    <span class="ml-4" [class]="hayError ? 'text-danger' : 'text-secondary'">{{perris.nombre}}</span>
+    <span class="ml-4" [class]="perroInexistente ? 'text-danger' : 'text-secondary'">{{perris.nombre}}</span>
 </div>
 <div>
     <span class="text-success etiqueta">Raza:</span>
-    <span class="ml-4" [class]="hayError ? 'text-danger' : 'text-secondary'">{{perris.raza}}</span>
+    <span class="ml-4" [class]="perroInexistente ? 'text-danger' : 'text-secondary'">{{perris.raza}}</span>
 </div>
 <div>
     <span class="text-success etiqueta">Edad:</span>
-    <span class="ml-4" [class]="hayError ? 'text-danger' : 'text-secondary'">{{perris.edad}}</span>
+    <span class="ml-4" [class]="perroInexistente ? 'text-danger' : 'text-secondary'">
+        {{perris.edad === 0 ? '' : perris.edad}}</span>
 </div>
 <div>
     <span class="text-success etiqueta">Id Propietario:</span>
-    <span class="ml-4" [class]="hayError ? 'text-danger' : 'text-secondary'">{{perris.idPropietario}}</span>
+    <span class="ml-4" [class]="perroInexistente ? 'text-danger' : 'text-secondary'">
+        {{perris.idPropietario === 0 ? '' : perris.idPropietario}}</span>
 </div>
 <hr class="my-4">
 <div class="mt-4">

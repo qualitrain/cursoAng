@@ -19,8 +19,8 @@ export class AppComponent {
   ejemplo01Servicios=false;
   ejemploCombinacionesSwitchMapAproximacion=false;
   ejemploCombinacionesSwitchMap=false;
-  ejemploCombinacionesFtesObservables=true;
-  ejemploAjax=false;
+  ejemploCombinacionesFtesObservables=false;
+  ejemploAjax=true;
 
   title = 'cursoAng';
 }

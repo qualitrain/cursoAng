@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IPerro } from './iperro';
-import { catchError, Observable, retry } from 'rxjs';
+import { catchError, Observable, of, retry, throwError } from 'rxjs';
 import { ajax, AjaxError } from "rxjs/ajax";
 
 @Injectable({
@@ -14,7 +14,7 @@ export class GestorDatosPerreraService {
     return ajax.getJSON(this.uriPerroxID + id).pipe(
       catchError( (error:any) => {
           console.error(error);
-          throw error;
+          return of({estado:'error',objError:error})
         })
     )
   }
@@ -23,13 +23,9 @@ export class GestorDatosPerreraService {
     return ajax.getJSON(this.uriPerroxID + id + "A").pipe(
       retry(3),
       catchError( (error:any) => {
-        if(error.status != 0){
-          console.error(error);
-          throw error.response;
-        }
-        else
-          throw error
-        })
+        console.error(error);
+        return of({estado:'error',objError:error})
+      })
     )
   }
 
